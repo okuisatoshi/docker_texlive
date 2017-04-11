@@ -6,7 +6,6 @@ RUN DEBIAN_DEFRONTEND=noninteractive apt-get install -yq texlive-lang-japanese t
 RUN apt-get clean -yq
 ENV LANG ja_JP.UTF-8
 ENV HOME /root
-VOLUME ["/data"]
 WORKDIR /data
 CMD /bin/bash
 
